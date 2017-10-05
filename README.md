@@ -23,4 +23,4 @@ The user has requested 400 of the item at position 7, which only has a quantity 
 
 
 ## Future Plans for Improvement
-* Program the app to track product sales across the store's departments and then provide a summary of the highest-grossing departments in the store (add "manager view" and "supervisor view").
+* Program the app to track product sales across the store's departments and then provide a summary of the highest-grossing departments in the store (add "manager view" and "supervisor view" in addition to the existing "customer view").
