@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
 });
 
 //display all the items available for purchase
-connection.query("SELECT * FROM products", function(err, resp) {
+connection.query("SELECT * FROM stock", function(err, resp) {
     for (var i = 0; i < resp.length; i++) {
         console.log("Item ID: " + resp[i].position);
         console.log("Name: " + resp[i].product_name);
