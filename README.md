@@ -12,7 +12,7 @@ Bamazon is an Amazon-like storefront that runs in the terminal/git bash. After i
 
 ## The App in Action
 
-**(note: these images are from before I added in code to display all the items in the store prior to asking the customer for the ID and quantity of the product they want to buy. The images are also from before I added in the code that prompts the user if they would like to purchase another item after they have made their purchase.)**
+**(note: these images are from before I added in code to display all the items in the store prior to asking the customer for the ID and quantity of the product they want to buy. The images are also from before I added in the code that asks the user if they would like to purchase another item after they have made a purchase.)**
 
 ![Before the purchase is made, the item in the mySQL table at position 9 has a stock quantity of 100. In Bash, the user requests to buy 2 of the item with ID 9.](https://github.com/zagara2/bamazon/blob/master/screenshots/db_table_before_purchase.JPG)
 Before the purchase is made, the item in the mySQL table at position 9 has a stock quantity of 100. In Bash, the user requests to buy 2 of the item with ID 9.
