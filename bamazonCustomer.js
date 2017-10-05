@@ -14,16 +14,21 @@ var connection = mysql.createConnection({
 });
 
 //display all the items available for purchase
-connection.query("SELECT * FROM stock", function(err, resp) {
-    for (var i = 0; i < resp.length; i++) {
-        console.log("Item ID: " + resp[i].position);
-        console.log("Name: " + resp[i].product_name);
-        console.log("Department: " + resp[i].department_name);
-        console.log("Price: " + resp[i].price + "\n");
-    }
-});
+function displayItems() {
+    connection.query("SELECT * FROM stock", function(err, resp) {
+        for (var i = 0; i < resp.length; i++) {
+            console.log("Item ID: " + resp[i].position);
+            console.log("Name: " + resp[i].product_name);
+            console.log("Department: " + resp[i].department_name);
+            console.log("Price: " + resp[i].price + "\n");
+        }
+    });
+}
+
+
 
 function bamazonify() {
+
     inquirer.prompt([{
         name: "position",
         type: "input",
@@ -67,4 +72,5 @@ function bamazonify() {
 
     })
 };
-bamazonify();
+displayItems();
+setTimeout(bamazonify, 1000);
