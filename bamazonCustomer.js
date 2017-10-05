@@ -25,6 +25,26 @@ function displayItems() {
     });
 }
 
+function buyAnother() {
+
+    inquirer.prompt([{
+        name: "myResponse",
+        type: "confirm",
+        message: "Buy another item?",
+        default: true,
+    }]).then(function(answer) {
+
+        // console.log(answer);
+
+        if (answer.myResponse === true) {
+            bamazonify();
+        } else {
+            console.log("Goodbye, thanks for shopping!");
+        }
+    })
+
+
+}
 
 
 function bamazonify() {
@@ -69,7 +89,7 @@ function bamazonify() {
             }
         });
 
-
+        setTimeout(buyAnother, 1000);
     })
 };
 displayItems();
