@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Bamazon is an Amazon-like storefront. The app takes in orders from customers and depletes stock from the store's inventory. Once the customer has placed an order, the app checks if the store has enough of the product to meet the customer's request. If not, the app notifies the customer, and then prevents the order from going through. If the store does have enough of the product, the customer's order will be fulfilled, and the SQL database is updated to reflect the remaining quantity. Once the update goes through, the customer is shown the total cost of their purchase.
+Bamazon is an Amazon-like storefront. After initially displaying all the products for sale, the app is ready to take in orders from customers and deplete stock from the store's inventory. Once the customer has placed an order, the app checks if the store has enough of the product to meet the customer's request. If not, the app notifies the customer, and then prevents the order from going through. If the store does have enough of the product, the customer's order will be fulfilled, and the SQL database is updated to reflect the remaining quantity. Once the update goes through, the customer is shown the total cost of their purchase. The customer is then asked if they would like to purchase another item.
 
 ## Technologies Used
 * Node.js
