@@ -23,5 +23,4 @@ The user has requested 400 of the item at position 7, which only has a quantity 
 
 
 ## Future Plans for Improvement
-* Display all the items in the store to the customer before asking them the ID and quantity of the product they want to buy.
-* Program the app to track product sales across the store's departments and then provide a summary of the highest-grossing departments in the store.
+* Program the app to track product sales across the store's departments and then provide a summary of the highest-grossing departments in the store (add "manager view" and "supervisor view").

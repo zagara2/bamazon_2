@@ -13,6 +13,16 @@ var connection = mysql.createConnection({
     database: "Bamazondb"
 });
 
+//display all the items available for purchase
+connection.query("SELECT * FROM products", function(err, resp) {
+    for (var i = 0; i < resp.length; i++) {
+        console.log("Item ID: " + resp[i].item_id);
+        console.log("Name: " + resp[i].product_name);
+        console.log("Department: " + resp[i].department_name);
+        console.log("Price: " + resp[i].price + "\n");
+    }
+});
+
 function bamazonify() {
     inquirer.prompt([{
         name: "position",
