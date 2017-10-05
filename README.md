@@ -12,6 +12,8 @@ Bamazon is an Amazon-like storefront. The app takes in orders from customers and
 
 ## The App in Action
 
+**(note: these images are from before I added in code to display all the items in the store to the customer before asking them the ID and quantity of the product they want to buy)**
+
 ![Before the purchase is made, the item in the mySQL table at position 9 has a stock quantity of 100. In Bash, the user requests to buy 2 of the item with ID 9.](https://github.com/zagara2/bamazon/blob/master/screenshots/db_table_before_purchase.JPG)
 Before the purchase is made, the item in the mySQL table at position 9 has a stock quantity of 100. In Bash, the user requests to buy 2 of the item with ID 9.
 
